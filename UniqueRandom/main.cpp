@@ -31,32 +31,27 @@ void main()
 			}
 		} while (!unique);
 
-
-		//вывод массива на экран
-		for (int i = 0; i < n; i++)
-		{
-			cout << arr[i] << tab;
-		}
-		cout << endl;
 	}
-#endif
-
-	/*	for (int i = 0; i < n; i++)
+#endif // UNIQUE_1
+	cout << time(NULL) << endl;
+	srand(time(NULL));
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % n;
+		for (int j = 0; j < i; j++)
 		{
-			arr[i] = rand() % n;
-			for (int j = 0; j < i; j++)
+			if (arr[i] == arr[j])
 			{
-				if (arr[i] == arr[j])
-				{
-					i--;
-					break;
-				}
+				i--;
+				break;		
+				continue;	
 			}
 		}
+	}
 
-		for (int i = 0; i < n; i++)
-		{
-			cout << arr[i] << tab;
-		}
-		cout << endl;*/
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;
 }

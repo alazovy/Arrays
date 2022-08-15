@@ -6,7 +6,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	const int n = 5; 
-	int arr[n] = { 3, 5, 8 };
+	int arr[n] = {};
 	//arr[2] = 123;
 
 	//Ввод массива с клавиатуры

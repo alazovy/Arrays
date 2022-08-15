@@ -22,12 +22,12 @@ void main()
 	cout << "Введите количество сдвигов: "; cin >> shifts;
 	for (int i = 0; i < shifts; i++)
 	{
-		int buffer = arr[9];
-		for (int i = n-1; i >= 0; i--)
+		int buffer = arr[0];
+		for (int i = 0; i < n; i++)
 		{
-			arr[i] = arr[i - 1];
+			arr[i] = arr[i + 1];
 		}
-		arr[0] = buffer;
+		arr[n - 1] = buffer;
 
 		//Вывод сдвинутого массива на экран:
 		system("CLS");
