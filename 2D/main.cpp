@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -11,8 +11,8 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef BASICS
-	const int ROWS = 8;	//Количество строк
-	const int COLS = 5;	//Количество элементов строки (столбцов)
+	const int ROWS = 8;	//РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє
+	const int COLS = 5;	//РљРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРєРё (СЃС‚РѕР»Р±С†РѕРІ)
 	int arr[ROWS][COLS] =
 	{
 		{1,2,3},
@@ -34,7 +34,7 @@ void main()
 	const int COLS = 3;
 	int A[ROWS][COLS];
 	int B[ROWS][COLS];
-	//Заполняем матрицы случайными числами
+	//Р—Р°РїРѕР»РЅСЏРµРј РјР°С‚СЂРёС†С‹ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -44,7 +44,7 @@ void main()
 		}
 	}
 
-	//Выводим матрицы на экран:
+	//Р’С‹РІРѕРґРёРј РјР°С‚СЂРёС†С‹ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -63,7 +63,7 @@ void main()
 		cout << endl;
 	}
 	cout << delimiter << endl;
-	int C[ROWS][COLS]{};	//Матрица результат
+	int C[ROWS][COLS]{};	//РњР°С‚СЂРёС†Р° СЂРµР·СѓР»СЊС‚Р°С‚
 #ifdef MATRIX_ADDITION
 			
 	for (int i = 0; i < ROWS; i++)
